@@ -16,6 +16,8 @@ module:
   devel: 0
   dynamic_page_cache: 0
   editor: 0
+  entity: 0
+  entity_browser: 0
   field: 0
   field_ui: 0
   file: 0
@@ -24,6 +26,8 @@ module:
   history: 0
   image: 0
   link: 0
+  media_entity: 0
+  media_entity_browser: 0
   menu_ui: 0
   node: 0
   options: 0
