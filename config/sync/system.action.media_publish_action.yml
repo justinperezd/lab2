@@ -1,13 +1,13 @@
-uuid: b61b157f-ebcd-4c10-a406-d78205a09c99
+uuid: 4f348936-9d9e-4b8a-b2cb-ca3ac449a1c3
 langcode: en
 status: true
 dependencies:
   module:
-    - media_entity
+    - media
 _core:
-  default_config_hash: Bis1eEetH6KGAgrwR3i4JT3gZfQjRg6RnXMCJdlkhGU
+  default_config_hash: nh83qNNrmWE-CDdHz2MdFOAk60T9mzv3R-MaKfZR2jw
 id: media_publish_action
 label: 'Publish media'
 type: media
-plugin: media_publish_action
+plugin: 'entity:publish_action:media'
 configuration: {  }
