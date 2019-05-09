@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.book.body
+    - field.field.node.book.field_author
+    - field.field.node.book.field_category
     - node.type.book
   module:
     - text
@@ -16,15 +18,31 @@ mode: teaser
 content:
   body:
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
+    type: text_trimmed
+    weight: 1
     settings:
-      trim_length: 600
+      trim_length: 140
     third_party_settings: {  }
     region: content
+  field_author:
+    type: string
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_category:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
