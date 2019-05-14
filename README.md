@@ -1,3 +1,9 @@
+# Using this project
+
+After cloning/forking this project you should run:
+- ddev composer install
+- ddev exec drush si --db-url=mysql://db:db@db/db --existing-config
+
 # Composer template for Drupal projects
 
 [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
