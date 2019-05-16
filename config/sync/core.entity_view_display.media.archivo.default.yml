@@ -1,0 +1,62 @@
+uuid: facce287-0f3a-4977-afd3-5cda6acae11d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.archivo.field_licencia
+    - field.field.media.archivo.field_media_file
+    - image.style.thumbnail
+    - media.type.archivo
+  module:
+    - file
+    - image
+    - user
+id: media.archivo.default
+targetEntityType: media
+bundle: archivo
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_licencia:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_media_file:
+    weight: 6
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  thumbnail:
+    type: image
+    weight: 5
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    region: content
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  name: true
