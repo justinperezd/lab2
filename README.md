@@ -1,8 +1,14 @@
 # Using this project
 
-After cloning/forking this project you should run:
-- ddev composer install
-- ddev exec drush si --db-url=mysql://db:db@db/db --existing-config
+After cloning/forking this project you should do the following:
+- Initiate containers:
+  - ddev start
+- Install dependencies:
+  - ddev composer install
+- Install site using existing config:
+  - ddev exec drush si --db-url=mysql://db:db@db/db --existing-config
+- Import default content:
+  - ddev exec drush dcdi
 
 # Composer template for Drupal projects
 
