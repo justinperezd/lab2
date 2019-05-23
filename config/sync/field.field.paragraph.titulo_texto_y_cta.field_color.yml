@@ -1,0 +1,21 @@
+uuid: 19dff7cf-2acf-42a2-8624-bc69b71f2392
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color
+    - paragraphs.paragraphs_type.titulo_texto_y_cta
+  module:
+    - options
+id: paragraph.titulo_texto_y_cta.field_color
+field_name: field_color
+entity_type: paragraph
+bundle: titulo_texto_y_cta
+label: Color
+description: 'Seleccione el color de fondo para este componente'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

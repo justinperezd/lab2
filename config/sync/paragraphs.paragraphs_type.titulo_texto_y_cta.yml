@@ -1,0 +1,9 @@
+uuid: 63cbca59-c17b-4d5d-84f2-3e385e3d74a9
+langcode: en
+status: true
+dependencies: {  }
+id: titulo_texto_y_cta
+label: 'Titulo, texto y CTA'
+icon_uuid: null
+description: 'Component with title, text and link'
+behavior_plugins: {  }

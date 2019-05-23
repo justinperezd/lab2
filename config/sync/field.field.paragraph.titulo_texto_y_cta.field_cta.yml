@@ -1,0 +1,23 @@
+uuid: cca76a10-89ed-41e9-99db-049b03e2ae1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta
+    - paragraphs.paragraphs_type.titulo_texto_y_cta
+  module:
+    - link
+id: paragraph.titulo_texto_y_cta.field_cta
+field_name: field_cta
+entity_type: paragraph
+bundle: titulo_texto_y_cta
+label: CTA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,21 @@
+uuid: 89e413a3-dcdc-4411-bf4b-9316e56c2a3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.titulo_texto_y_cta
+  module:
+    - text
+id: paragraph.titulo_texto_y_cta.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: titulo_texto_y_cta
+label: text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
